@@ -2,7 +2,7 @@
 
 header("Access-Control-Allow-Origin: *");
 error_reporting(E_ERROR | E_PARSE);
-$db = new SQLite3('tmp/scores.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
+$db = new SQLite3('/tmp/scores.sqlite', SQLITE3_OPEN_CREATE | SQLITE3_OPEN_READWRITE);
 
 if ($_GET['x'] == "install")
 {
